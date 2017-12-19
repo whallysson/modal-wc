@@ -1,0 +1,310 @@
+/**
+* RESET
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+object,
+embed,
+video,
+iframe,
+iframe['style']{
+    max-width: 100%;
+    height: auto;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+a img {
+    border: none;
+}
+
+ul{
+    list-style: none;
+}
+
+fieldset{border: 0;}
+input,
+.input,
+select,
+textarea{
+    padding: 8px;
+    width: 100%;
+    font-size: 0.875em;
+    font-weight: 300;
+    border: 1px solid #ccc;
+}
+
+blockquote{
+    padding: 15px 15px 15px 10px;
+    background: #F5F5F5;
+    border-left: 5px solid #888;
+    font-size: 0.875em;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive .embed-responsive-item, .embed-responsive iframe, .embed-responsive embed, .embed-responsive object, .embed-responsive video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+.embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+}
+
+.embed-responsive-4by3 {
+    padding-bottom: 75%; 
+}
+
+/* HACK */
+@-moz-document url-prefix() {
+    select { padding: 7px; }
+}
+
+input.btn{
+    width: auto;
+    cursor: pointer;
+}
+
+.clear{
+    clear: both;
+}
+
+.fl_left{
+    float: left;
+}
+
+.fl_right{
+    float: right;
+}
+
+/***********************************
+######### CUSTON BUTTONS ###########
+***********************************/
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    padding: 6px 12px;
+    background: #888;
+    font-size: 0.9em;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    text-shadow: 1px 1px #555;
+}
+
+.btn:hover{background: #555; text-decoration: none;}
+.btn:hover.btn_noaction:hover{background: #888 !important; cursor: default !important;}
+
+.btn_link{color: #eee; text-shadow: 1px 1px 0 #333; text-decoration: none;}
+.btn_link:hover{color: #fff;}
+
+.btn_green{background-color: #00B494; text-shadow: 1px 1px #008068;}
+.btn_green:hover{background-color: #008068;}
+.btn_green_noaction:hover{background: #00B494 !important; cursor: default !important;}
+
+.btn_blue{background-color: #0E96E5; text-shadow: 1px 1px #096397;}
+.btn_blue:hover{background-color: #096397;}
+.btn_blue_noaction:hover{background: #0E96E5 !important; cursor: default !important;}
+
+.btn_yellow{background-color: #FAAD50; text-shadow: 1px 1px #CC8D41;}
+.btn_yellow:hover{background-color: #CC8D41;}
+.btn_yellow_noaction:hover{background: #FAAD50 !important; cursor: default !important;}
+
+.btn_red{background-color: #F45563; text-shadow: 1px 1px #C54550;}
+.btn_red:hover{background-color: #C54550;}
+.btn_red_noaction:hover{background: #F45563 !important; cursor: default !important;}
+
+
+.btn_cta_blue{
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #0E96E5;
+    border-bottom: 5px solid #096397;
+}
+
+.btn_cta_blue:hover{
+    background-color: #096397;
+    border-color: #0A537D;
+}
+
+.btn_cta_green{
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #00B494;
+    border-bottom: 5px solid #008068;
+}
+
+.btn_cta_green:hover{
+    background-color: #008068;
+    border-color: #0B5747;
+}
+
+.btn_cta_yellow{
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #FAAD50;
+    border-bottom: 5px solid #CC8D41;
+}
+
+.btn_cta_yellow:hover{
+    background-color: #CC8D41;
+    border-color: #A67436;
+}
+
+.btn_cta_red{
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #F45563;
+    border-bottom: 5px solid #C54550;
+}
+
+.btn_cta_red:hover{
+    background-color: #C54550;
+    border-color: #93343C;
+}
+
+.btn_green_noaction:hover{background: #00B494 !important; cursor: default !important;}
+.btn_blue_noaction:hover{background: #0E96E5 !important; cursor: default !important;}
+.btn_yellow_noaction:hover{background: #FAAD50 !important; cursor: default !important;}
+.btn_red_noaction:hover{background: #F45563 !important; cursor: default !important;}
+
+
+.btn_small{padding: 2px 4px;}
+.btn_medium{padding: 6px 12px;}
+.btn_large{padding: 8px 16px;}
+.btn_xlarge{padding: 12px 24px;}
+.btn_xxlarge{padding: 16px 32px;}
+
+
+
+/***********************************
+####### MODAL ########
+***********************************/
+.wc_modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 98;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.wc_modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+    z-index: 99;
+    top: -100%;
+}
+
+.wc_modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+
+.wc_modal-header {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.wc_close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+.wc_close:focus, .wc_close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+button.wc_close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+
+.wc_modal-body, .wc_modal-footer {
+    position: relative;
+    padding: 15px;
+}
+
+
+@media (min-width: 992px){ 
+    .wc_modal-lg {
+        width: 900px;
+    }
+}
+
+@media (min-width: 768px){ 
+    .wc_modal-dialog {
+        width: 600px;
+        margin: 30px auto;
+    }
+    .wc_modal-sm {
+        width: 300px;
+    }
+    .wc_modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    }
+}
